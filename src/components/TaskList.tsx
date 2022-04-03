@@ -27,7 +27,7 @@ export function TaskList() {
     setTasks(
       tasks.map((task) =>
         task.id === id
-          ? ({ ...task, isComplete: !task.isComplete } as Task)
+          ? ({ ...task, isComplete: !task.isComplete })
           : task
       )
     );
